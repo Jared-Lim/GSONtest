@@ -22,7 +22,7 @@ public class Gson3Example {
 		// Convert JSON to Java Object
 		Staff staff = gson.fromJson(reader, Staff.class);
 		reader.close();
-		System.out.println(staff);
+		System.out.println(staff.toString());
 		
 		reader = new FileReader("resources/testJSON/staff.json");
 		// Convert JSON to JsonElement, and later to String

@@ -9,7 +9,12 @@ public class Stats {
 	private int speed;
 	private int luck;
 	
+	@Override
 	public String toString(){
-		return "----"+hp+mp+strength+skill+magic+speed+luck;
+		
+		String output = String.format("====| hp  | mp  | str | skl | mag | spd | lck |\n"
+									+ "====-------------------------------------------\n"
+									+ "====| %3d | %3d | %3d | %3d | %3d | %3d | %3d |", hp, mp, strength, skill, magic, speed, luck);
+		return output;
 	}
 }

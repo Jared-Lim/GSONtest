@@ -1,6 +1,7 @@
 package gerson4;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,7 +16,10 @@ public class GsonExample {
         Staff staff = createDummyObject();
 
         //1. Convert object to JSON string
-        Gson gson = new Gson();
+        GsonBuilder builder = new GsonBuilder();
+		builder.serializeNulls();
+		builder.setPrettyPrinting().serializeNulls();
+        Gson gson = builder.create();
         String json = gson.toJson(staff);
         System.out.println(json);
 
@@ -23,10 +27,13 @@ public class GsonExample {
         try (FileWriter writer = new FileWriter("resources/testJSON/staff.json")) {
 
             gson.toJson(staff, writer);
+            writer.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        
 
     }
 

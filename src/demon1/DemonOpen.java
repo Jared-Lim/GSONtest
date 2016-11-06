@@ -16,6 +16,9 @@ public class DemonOpen {
 	    
 	    Reader reader = new FileReader("demons/Ama1.json");
 	    
+	    Demon amaterasu = gson.fromJson(reader, Demon.class);
+	    reader.close();
+	    amaterasu.toString();
 	    
 	}
 }

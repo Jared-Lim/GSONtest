@@ -18,7 +18,7 @@ public class DemonOpen {
 	    
 	    Demon amaterasu = gson.fromJson(reader, Demon.class);
 	    reader.close();
-	    amaterasu.toString();
+	    System.out.println(amaterasu.toString());
 	    
 	}
 }

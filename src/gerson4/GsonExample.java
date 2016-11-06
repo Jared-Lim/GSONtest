@@ -20,7 +20,7 @@ public class GsonExample {
         System.out.println(json);
 
         //2. Convert object to JSON string and save into a file directly
-        try (FileWriter writer = new FileWriter("src/staff.json")) {
+        try (FileWriter writer = new FileWriter("resources/testJSON/staff.json")) {
 
             gson.toJson(staff, writer);
 

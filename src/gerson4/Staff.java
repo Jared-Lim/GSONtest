@@ -16,6 +16,6 @@ public class Staff {
 	public void setAge(int age){this.age=age;}
 	public void setPosition(String position){this.position=position;}
 	public void setSalary(BigDecimal salary){this.salary=salary;}
-	
+	public void setSkills(List<String> skills){this.skills=skills;}
 	
 }

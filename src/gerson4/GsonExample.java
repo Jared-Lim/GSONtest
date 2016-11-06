@@ -33,6 +33,7 @@ public class GsonExample {
     private static Staff createDummyObject() {
 
         Staff staff = new Staff();
+        System.out.println(staff);
 
         staff.setName("mkyong");
         staff.setAge(35);

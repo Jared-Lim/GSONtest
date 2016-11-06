@@ -20,6 +20,7 @@ public class GsonExample {
 		builder.serializeNulls();
 		builder.setPrettyPrinting().serializeNulls();
         Gson gson = builder.create();
+        //Gson gson = new Gson();
         String json = gson.toJson(staff);
         System.out.println(json);
 

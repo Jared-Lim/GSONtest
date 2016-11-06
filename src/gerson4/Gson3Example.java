@@ -1,6 +1,7 @@
 package gerson4;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 
 import java.io.FileReader;
@@ -11,7 +12,10 @@ public class Gson3Example {
 
     public static void main(String[] args) throws IOException {
 
-        Gson gson = new Gson();
+    	GsonBuilder builder = new GsonBuilder();
+ 		builder.serializeNulls();
+ 		builder.setPrettyPrinting().serializeNulls();
+        Gson gson = builder.create();
 
         Reader reader = new FileReader("resources/testJSON/staff.json");
 

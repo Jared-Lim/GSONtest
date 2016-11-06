@@ -1,10 +1,10 @@
 package demon1;
 
 public class Demon {
-	public String tribe;
-	public String nameJP;
-	public String nameEN;
-	public int level;
+	private String tribe;
+	private String nameJP;
+	private String nameEN;
+	private int level;
 	
 	public String toString(){
 		return "--tribe: \n"+tribe+

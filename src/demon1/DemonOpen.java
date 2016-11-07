@@ -16,5 +16,6 @@ public class DemonOpen {
 	    reader.close();
 	    System.out.println(amaterasu.toString());
 	    
+	    System.exit(0);
 	}
 }

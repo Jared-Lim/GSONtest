@@ -17,6 +17,18 @@ public class Affinities {
 	
 	@Override
 	public String toString(){
-		return "phys--"+physical;
+		return 	"phys  : "+physical+"\n"+
+				"gun   : "+gun+"\n"+
+				"fire  : "+fire+"\n"+
+				"ice   : "+ice+"\n"+
+				"thun  : "+thunder+"\n"+
+				"shock : "+shock+"\n"+
+				"banish: "+banish+"\n"+
+				"curse : "+curse+"\n"+
+				"bind  : "+bind+"\n"+
+				"sleep : "+sleep+"\n"+
+				"cold  : "+cold+"\n"+
+				"confus: "+confusion+"\n"+
+				"poison: "+poison;
 	}
 }

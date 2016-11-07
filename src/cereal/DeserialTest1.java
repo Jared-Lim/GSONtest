@@ -1,6 +1,5 @@
 package cereal;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
@@ -28,7 +27,10 @@ public class DeserialTest1 {
 		
 		Skills amaterasu = gson.fromJson(reader, Skills.class);
 		
-		System.out.println(amaterasu.toString());
+		System.out.println(amaterasu.ListOfSkills.size());
+		System.out.println(amaterasu.ListOfSkills.toString());
+		System.out.println(amaterasu.ListOfSkills.get(0).name);
+
 	}
 }
 

@@ -1,8 +1,5 @@
 package demonize;
 
-import demon1.Affinities;
-import demon1.Stats;
-
 public class Demon {
 	private String tribe;
 	private String nameJP;

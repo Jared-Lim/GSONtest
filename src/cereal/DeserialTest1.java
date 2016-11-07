@@ -27,20 +27,25 @@ public class DeserialTest1 {
 		
 		Skills amaterasu = gson.fromJson(reader, Skills.class);
 		
-		System.out.println(amaterasu.ListOfSkills.size());
+		//System.out.println(amaterasu.ListOfSkills.size());
 		System.out.println(amaterasu.ListOfSkills.toString());
-		System.out.println(amaterasu.ListOfSkills.get(0).name);
+		//System.out.println(amaterasu.ListOfSkills.get(0).toString());
 
 	}
 }
 
 class Skills{
-	public List<SingleSkill> ListOfSkills; 
+	public List<SingleSkill> ListOfSkills;
 }
 
 class SingleSkill{
 	public String name;
 	public int level;
+	
+	@Override
+	public String toString(){
+		return name+"--"+level;
+	}
 }
 
 class SkillsDeserializer implements JsonDeserializer<Skills>{

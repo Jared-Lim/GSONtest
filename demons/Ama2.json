@@ -3,4 +3,7 @@
 	"nameJP": "アマテラス",
 	"nameEN": "Amaterasu",
 	"level": 79,
+	"fusions": [
+		["ヤタガラス", "アメノフトタマ", "アメノウズメ"]
+	]
 }

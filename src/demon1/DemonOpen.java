@@ -10,7 +10,7 @@ public class DemonOpen {
 	public static void main(String[] args) throws IOException {
 	    Gson gson = new Gson();
 	    
-	    Reader reader = new FileReader("demons/Ama1.json");
+	    Reader reader = new FileReader("demons/Ama2.json");
 	    
 	    Demon amaterasu = gson.fromJson(reader, Demon.class);
 	    reader.close();

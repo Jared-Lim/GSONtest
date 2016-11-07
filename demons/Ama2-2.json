@@ -1,0 +1,18 @@
+{
+	"tribe": "天津神",
+	"nameJP": "アマテラス",
+	"nameEN": "Amaterasu",
+	"level": 79,
+	"stats": {
+		"hp": 418,
+		"mp": 405,
+		"strength": 73,
+		"skill": 81,
+		"magic": 106,
+		"speed": 69,
+		"luck": 98
+	},
+	"fusions": [
+		["ヤタガラス", "アメノフトタマ", "アメノウズメ"]
+	]
+}

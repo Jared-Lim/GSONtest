@@ -7,6 +7,7 @@ public class Demon {
 	private int level;
 	private Stats stats;
 	private Affinities affinity;
+	private Skills skills;
 	private String[][] fusions;
 	
 	public String toString(){
@@ -20,6 +21,9 @@ public class Demon {
 				"\n--affs:\n"+
 				"-------------------\n"+
 				affinity.toString()+
+				"\n--skills:\n"+
+				"-------------------\n"+
+				skills.ListOfSkills.toString()+
 				"\n--FUS: "+arrayOutput(fusions);
 	}
 	

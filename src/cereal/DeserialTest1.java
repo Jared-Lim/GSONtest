@@ -1,11 +1,16 @@
 package cereal;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.google.gson.JsonArray;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
@@ -13,7 +18,18 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 
 public class DeserialTest1 {
-
+	public static void main(String[] args) throws IOException {
+		
+		Reader reader = new FileReader("demons/Ama5.json");
+		
+		GsonBuilder builder = new GsonBuilder();
+		builder.registerTypeAdapter(Skills.class, new SkillsDeserializer());
+		Gson gson = builder.create();
+		
+		Skills amaterasu = gson.fromJson(reader, Skills.class);
+		
+		System.out.println(amaterasu.toString());
+	}
 }
 
 class Skills{

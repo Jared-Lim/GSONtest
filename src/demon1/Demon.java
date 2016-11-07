@@ -7,7 +7,7 @@ public class Demon {
 	private int level;
 	
 	public String toString(){
-		return "--tribe: "+tribe+
+		return    "--tribe: "+tribe+
 				"\n--nameJP: "+nameJP+
 				"\n--nameEn: "+nameEN+
 				"\n--level: "+level;

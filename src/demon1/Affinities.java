@@ -17,6 +17,6 @@ public class Affinities {
 	
 	@Override
 	public String toString(){
-		return "test";
+		return "phys--"+physical;
 	}
 }

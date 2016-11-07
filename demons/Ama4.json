@@ -1,0 +1,15 @@
+{
+	"physical": "-",
+	"gun": "-",
+	"fire": "reflect",
+	"ice": "-",
+	"thunder": "weak",
+	"shock": "-",
+	"banish": "null",
+	"curse": "null",
+	"bind": "-",
+	"sleep": "-",
+	"cold": "-",
+	"confusion": "-",
+	"poison": "-"
+}

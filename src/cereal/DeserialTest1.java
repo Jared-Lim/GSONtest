@@ -1,6 +1,7 @@
 package cereal;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.JsonArray;
@@ -18,7 +19,8 @@ class Skills{
 }
 
 class SingleSkill{
-	
+	public String name;
+	public int level;
 }
 
 class SkillsDeserializer implements JsonDeserializer<Skills>{
@@ -27,6 +29,8 @@ class SkillsDeserializer implements JsonDeserializer<Skills>{
 	public Skills deserialize(JsonElement arg0, Type arg1, JsonDeserializationContext arg2) throws JsonParseException {
 		// TODO Auto-generated method stub
 		JsonArray jArray = (JsonArray) arg0;
+		
+		List<SingleSkill> Skillz = new ArrayList<>();
 		
 		
 		

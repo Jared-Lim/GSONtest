@@ -14,8 +14,12 @@ public class Demon3 {
 				"\n--nameJP: "+nameJP+
 				"\n--nameEn: "+nameEN+
 				"\n--level: "+level+
-				"\n--stats:\n"+stats.toString()+
-				"\n--affs:\n"+affinity.toString()+
+				"\n--stats:\n"+
+				"-------------------\n"+
+				stats.toString()+
+				"\n--affs:\n"+
+				"-------------------\n"+
+				affinity.toString()+
 				"\n--FUS: "+arrayOutput(fusions);
 	}
 	
